@@ -35,6 +35,7 @@ sans-serif;
 	box-sizing: border-box;
 	color: black;
 	font-family: $primary-font-stack;
+	
 }
 
 html {
@@ -48,7 +49,6 @@ html {
 body {
 	overflow: hidden;
 	margin: 0;
-	background: black;
 	background-image: url('./AC-cover.png');
 	background-size: cover;
 	-webkit-font-smoothing: antialiased;
@@ -91,7 +91,7 @@ input {
 	}
 
 	&:focus {
-		border: 2rem solid #6f00ff;
+		border: 2rem solid #0080ff;
 	}
 }
 
@@ -101,7 +101,7 @@ button {
 	flex-grow: 0;
 	flex-shrink: 0;
 	height: 48rem;
-	padding-inline: 30rem;
+	padding-inline: 10rem;
 
 	border-radius: 6rem;
 	border: none;
@@ -116,8 +116,9 @@ button {
 	font-size: 14rem;
 	line-height: 14rem;
 	letter-spacing: 0.015em;
+	transition: all 1s ease-in-out;
 
-	transition: filter 100ms linear;
+	transition: filter 0.25s linear;
 
 	&.icon-button {
 		display: inline-flex;
@@ -127,15 +128,16 @@ button {
 
 		justify-content: center;
 		align-items: center;
+ 		transition: all 0.2s ease-in-out;
 	}
 
 	&:hover,
 	&:focus {
-		filter: brightness(0.9);
+		filter: brightness(1.5);
 	}
 
 	&:active {
-		filter: brightness(0.8);
+		filter: brightness(1);
 	}
 }
 
@@ -196,6 +198,7 @@ button {
 	
 	display: flex;
 	background-color: #ffffffb7;
+	
 	height: 100vh;
 	max-width: 720rem;
 	margin: auto;
@@ -230,6 +233,11 @@ button {
 			background: #0084ff;
 		}
 	}
+}
+
+.chat-return{
+	margin-top: 5%;
+	margin-left: -100%;
 }
 
 .message-input-container {

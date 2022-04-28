@@ -11,7 +11,7 @@ export const AuthPage = () => {
 
 	return (
 		<main className='simple-wrapper'>
-			<p className='simple-heading'>Hey there Acer!</p>
+			<p className='simple-heading'>Hey there ACer!</p>
 
 			<p id='name-label' className='simple-subhead'>
 				Asian College - Dumaguete Campus
@@ -22,7 +22,7 @@ export const AuthPage = () => {
 					aria-labelledby='name-label'
 					type='text'
 					autoComplete='name'
-					placeholder='Enter your name here!'
+					placeholder='Enter your name here'
 					value={name}
 					onChange={(e) => setName(e.target.value)}
 					onKeyPress={(e) => {
